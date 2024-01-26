@@ -1,40 +1,44 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Sidebar() {
     return (
-        <aside class="left-sidebar" data-sidebarbg="skin5">
-            <div class="scroll-sidebar">
-                <nav class="sidebar-nav">
-                    <ul id="sidebarnav" class="p-t-30">
-                        <li class="sidebar-item"> 
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html" aria-expanded="false">
-                                <i class="mdi mdi-view-dashboard"></i>
-                                <span class="hide-menu">Dashboard</span>
-                            </a>
+        <aside className="left-sidebar" data-sidebarbg="skin5">
+            <div className="scroll-sidebar">
+                <nav className="sidebar-nav">
+                    <ul id="sidebarnav" className="p-t-30">
+                        <li className="sidebar-item"> 
+                            <Link className="sidebar-link waves-effect waves-dark sidebar-link" to="/" aria-expanded="false">
+                                <i className="mdi mdi-view-dashboard"></i>
+                                <span className="hide-menu">Dashboard</span>
+                            </Link>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Forms </span></a>
-                            <ul aria-expanded="false" class="collapse  first-level">
-                                <li class="sidebar-item">
-                                    <a href="form-basic.html" class="sidebar-link">
-                                        <i class="mdi mdi-note-outline"></i>
-                                        <span class="hide-menu"> Form Basic </span>
-                                    </a>
+                        <li className="sidebar-item"> <a className="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                            <i className="mdi mdi-receipt"></i>
+                                <span className="hide-menu">Orders </span>
+                            </a>
+                            <ul aria-expanded="false" className="collapse  first-level">
+                                <li className="sidebar-item">
+                                    <Link to="/all-orders" className="sidebar-link">
+                                        <i className="mdi mdi-note-outline"></i>
+                                        <span className="hide-menu"> All Orders </span>
+                                    </Link>
                                 </li>
-                                <li class="sidebar-item">
-                                    <a href="form-wizard.html" class="sidebar-link">
-                                        <i class="mdi mdi-note-plus"></i>
-                                        <span class="hide-menu"> Form Wizard </span>
-                                    </a>
+                                <li className="sidebar-item">
+                                    <Link to="/new-order" className="sidebar-link">
+                                        <i className="mdi mdi-note-plus"></i>
+                                        <span className="hide-menu"> New Order </span>
+                                    </Link>
                                 </li>
                             </ul>
                         </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="pages-buttons.html" aria-expanded="false"><i class="mdi mdi-relative-scale"></i><span class="hide-menu">Buttons</span></a></li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-face"></i><span class="hide-menu">Icons </span></a>
-                            <ul aria-expanded="false" class="collapse  first-level">
-                                <li class="sidebar-item"><a href="icon-material.html" class="sidebar-link"><i class="mdi mdi-emoticon"></i><span class="hide-menu"> Material Icons </span></a></li>
-                                <li class="sidebar-item"><a href="icon-fontawesome.html" class="sidebar-link"><i class="mdi mdi-emoticon-cool"></i><span class="hide-menu"> Font Awesome Icons </span></a></li>
+                        <li className="sidebar-item">
+                            <a className="sidebar-link waves-effect waves-dark sidebar-link" href="pages-buttons.html" aria-expanded="false"><i className="mdi mdi-relative-scale"></i><span className="hide-menu">Buttons</span></a></li>
+                        <li className="sidebar-item">
+                            <a className="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i className="mdi mdi-face"></i><span className="hide-menu">Icons </span></a>
+                            <ul aria-expanded="false" className="collapse  first-level">
+                                <li className="sidebar-item"><a href="icon-material.html" className="sidebar-link"><i className="mdi mdi-emoticon"></i><span className="hide-menu"> Material Icons </span></a></li>
+                                <li className="sidebar-item"><a href="icon-fontawesome.html" className="sidebar-link"><i className="mdi mdi-emoticon-cool"></i><span className="hide-menu"> Font Awesome Icons </span></a></li>
                             </ul>
                         </li>
                     </ul>

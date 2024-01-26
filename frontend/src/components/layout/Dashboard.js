@@ -2,107 +2,107 @@ import React from 'react'
 
 function Dashboard() {
     return (
-        <div class="page-wrapper">
-             <div class="page-breadcrumb">
-                <div class="row">
-                    <div class="col-12 d-flex no-block align-items-center">
-                        <h4 class="page-title">Dashboard</h4>
-                        <div class="ml-auto text-right">
+        <div className="page-wrapper">
+             <div className="page-breadcrumb">
+                <div className="row">
+                    <div className="col-12 d-flex no-block align-items-center">
+                        <h4 className="page-title">Dashboard</h4>
+                        <div className="ml-auto text-right">
                             <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                                <ol className="breadcrumb">
+                                    <li className="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li className="breadcrumb-item active" aria-current="page">Library</li>
                                 </ol>
                             </nav>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 col-lg-2 col-xlg-3">
-                        <div class="card card-hover">
-                            <div class="box bg-cyan text-center">
-                                <h1 class="font-light text-white"><i class="mdi mdi-view-dashboard"></i></h1>
-                                <h6 class="text-white">Dashboard</h6>
+            <div className="container-fluid">
+                <div className="row">
+                    <div className="col-md-6 col-lg-2 col-xlg-3">
+                        <div className="card card-hover">
+                            <div className="box bg-cyan text-center">
+                                <h1 className="font-light text-white"><i className="mdi mdi-view-dashboard"></i></h1>
+                                <h6 className="text-white">Dashboard</h6>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xlg-3">
-                        <div class="card card-hover">
-                            <div class="box bg-success text-center">
-                                <h1 class="font-light text-white"><i class="mdi mdi-chart-areaspline"></i></h1>
-                                <h6 class="text-white">Charts</h6>
+                    <div className="col-md-6 col-lg-4 col-xlg-3">
+                        <div className="card card-hover">
+                            <div className="box bg-success text-center">
+                                <h1 className="font-light text-white"><i className="mdi mdi-chart-areaspline"></i></h1>
+                                <h6 className="text-white">Charts</h6>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-2 col-xlg-3">
-                        <div class="card card-hover">
-                            <div class="box bg-warning text-center">
-                                <h1 class="font-light text-white"><i class="mdi mdi-collage"></i></h1>
-                                <h6 class="text-white">Widgets</h6>
+                    <div className="col-md-6 col-lg-2 col-xlg-3">
+                        <div className="card card-hover">
+                            <div className="box bg-warning text-center">
+                                <h1 className="font-light text-white"><i className="mdi mdi-collage"></i></h1>
+                                <h6 className="text-white">Widgets</h6>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-2 col-xlg-3">
-                        <div class="card card-hover">
-                            <div class="box bg-danger text-center">
-                                <h1 class="font-light text-white"><i class="mdi mdi-border-outside"></i></h1>
-                                <h6 class="text-white">Tables</h6>
+                    <div className="col-md-6 col-lg-2 col-xlg-3">
+                        <div className="card card-hover">
+                            <div className="box bg-danger text-center">
+                                <h1 className="font-light text-white"><i className="mdi mdi-border-outside"></i></h1>
+                                <h6 className="text-white">Tables</h6>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-2 col-xlg-3">
-                        <div class="card card-hover">
-                            <div class="box bg-info text-center">
-                                <h1 class="font-light text-white"><i class="mdi mdi-arrow-all"></i></h1>
-                                <h6 class="text-white">Full Width</h6>
+                    <div className="col-md-6 col-lg-2 col-xlg-3">
+                        <div className="card card-hover">
+                            <div className="box bg-info text-center">
+                                <h1 className="font-light text-white"><i className="mdi mdi-arrow-all"></i></h1>
+                                <h6 className="text-white">Full Width</h6>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xlg-3">
-                        <div class="card card-hover">
-                            <div class="box bg-danger text-center">
-                                <h1 class="font-light text-white"><i class="mdi mdi-receipt"></i></h1>
-                                <h6 class="text-white">Forms</h6>
+                    <div className="col-md-6 col-lg-4 col-xlg-3">
+                        <div className="card card-hover">
+                            <div className="box bg-danger text-center">
+                                <h1 className="font-light text-white"><i className="mdi mdi-receipt"></i></h1>
+                                <h6 className="text-white">Forms</h6>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-2 col-xlg-3">
-                        <div class="card card-hover">
-                            <div class="box bg-info text-center">
-                                <h1 class="font-light text-white"><i class="mdi mdi-relative-scale"></i></h1>
-                                <h6 class="text-white">Buttons</h6>
+                    <div className="col-md-6 col-lg-2 col-xlg-3">
+                        <div className="card card-hover">
+                            <div className="box bg-info text-center">
+                                <h1 className="font-light text-white"><i className="mdi mdi-relative-scale"></i></h1>
+                                <h6 className="text-white">Buttons</h6>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-2 col-xlg-3">
-                        <div class="card card-hover">
-                            <div class="box bg-cyan text-center">
-                                <h1 class="font-light text-white"><i class="mdi mdi-pencil"></i></h1>
-                                <h6 class="text-white">Elements</h6>
+                    <div className="col-md-6 col-lg-2 col-xlg-3">
+                        <div className="card card-hover">
+                            <div className="box bg-cyan text-center">
+                                <h1 className="font-light text-white"><i className="mdi mdi-pencil"></i></h1>
+                                <h6 className="text-white">Elements</h6>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-2 col-xlg-3">
-                        <div class="card card-hover">
-                            <div class="box bg-success text-center">
-                                <h1 class="font-light text-white"><i class="mdi mdi-calendar-check"></i></h1>
-                                <h6 class="text-white">Calnedar</h6>
+                    <div className="col-md-6 col-lg-2 col-xlg-3">
+                        <div className="card card-hover">
+                            <div className="box bg-success text-center">
+                                <h1 className="font-light text-white"><i className="mdi mdi-calendar-check"></i></h1>
+                                <h6 className="text-white">Calnedar</h6>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-2 col-xlg-3">
-                        <div class="card card-hover">
-                            <div class="box bg-warning text-center">
-                                <h1 class="font-light text-white"><i class="mdi mdi-alert"></i></h1>
-                                <h6 class="text-white">Errors</h6>
+                    <div className="col-md-6 col-lg-2 col-xlg-3">
+                        <div className="card card-hover">
+                            <div className="box bg-warning text-center">
+                                <h1 className="font-light text-white"><i className="mdi mdi-alert"></i></h1>
+                                <h6 className="text-white">Errors</h6>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <footer class="footer text-center">
+            <footer className="footer text-center">
                 All Rights Reserved by Matrix-admin. Designed and Developed by <a href="https://wrappixel.com">WrapPixel</a>.
             </footer>
         </div>

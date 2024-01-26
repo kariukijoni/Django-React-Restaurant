@@ -1,12 +1,9 @@
-from rest_framework import viewsets,generics
-from .models import Customer, MenuItem, Order, OrderItem, Payment,Category,RestaurantTable
+from rest_framework import generics
+from .models import Customer, MenuItem, Orders, Payment,Category,RestaurantTable
 from .serializers import (CustomerSerializer, MenuItemSerializer, OrderSerializer, 
-                          OrderItemSerializer, PaymentSerializer,CategorySerializer,
+                          PaymentSerializer,CategorySerializer,
                           RestaurantTableSerializer)
 
-# class CustomerViewSet(viewsets.ModelViewSet):
-#     queryset = Customer.objects.all()
-#     serializer_class = CustomerSerializer
 class CustomerList(generics.ListCreateAPIView):
     queryset=Customer.objects.all()
     serializer_class=CustomerSerializer
@@ -28,46 +25,20 @@ class MenuItemDetail(generics.RetrieveUpdateDestroyAPIView):
 
 
 class OrderList(generics.ListCreateAPIView):
-    queryset = Order.objects.all()
+    queryset = Orders.objects.all()
     serializer_class = OrderSerializer
 
 
 class OrderDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Order.objects.all()
+    queryset = Orders.objects.all()
     serializer_class = OrderSerializer
 
-
-class OrderItemList(generics.ListCreateAPIView):
-    queryset = OrderItem.objects.all()
-    serializer_class = OrderItemSerializer
-
-class OrderItemDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = OrderItem.objects.all()
-    serializer_class = OrderItemSerializer
 
 class PaymentList(generics.ListCreateAPIView):
     queryset = Payment.objects.all()
     serializer_class = PaymentSerializer
 
 class PaymentDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Payment.objects.all()
-    serializer_class = PaymentSerializer
-
-
-
-class MenuItemViewSet(viewsets.ModelViewSet):
-    queryset = MenuItem.objects.all()
-    serializer_class = MenuItemSerializer
-
-class OrderViewSet(viewsets.ModelViewSet):
-    queryset = Order.objects.all()
-    serializer_class = OrderSerializer
-
-class OrderItemViewSet(viewsets.ModelViewSet):
-    queryset = OrderItem.objects.all()
-    serializer_class = OrderItemSerializer
-
-class PaymentViewSet(viewsets.ModelViewSet):
     queryset = Payment.objects.all()
     serializer_class = PaymentSerializer
 
