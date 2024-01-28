@@ -33,12 +33,20 @@ function Sidebar() {
                             </ul>
                         </li>
                         <li className="sidebar-item">
-                            <a className="sidebar-link waves-effect waves-dark sidebar-link" href="pages-buttons.html" aria-expanded="false"><i className="mdi mdi-relative-scale"></i><span className="hide-menu">Buttons</span></a></li>
-                        <li className="sidebar-item">
-                            <a className="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i className="mdi mdi-face"></i><span className="hide-menu">Icons </span></a>
+                            <a className="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                                <i className="mdi mdi-face"></i><span className="hide-menu">Settings </span></a>
                             <ul aria-expanded="false" className="collapse  first-level">
-                                <li className="sidebar-item"><a href="icon-material.html" className="sidebar-link"><i className="mdi mdi-emoticon"></i><span className="hide-menu"> Material Icons </span></a></li>
-                                <li className="sidebar-item"><a href="icon-fontawesome.html" className="sidebar-link"><i className="mdi mdi-emoticon-cool"></i><span className="hide-menu"> Font Awesome Icons </span></a></li>
+                                <li className="sidebar-item">
+                                    <Link to="/add-restaurant-table" className="sidebar-link">
+                                        <i className="mdi mdi-emoticon"></i>
+                                        <span className="hide-menu"> Add Table </span>
+                                    </Link>
+                                </li>
+                                <li className="sidebar-item">
+                                    <a href="icon-fontawesome.html" className="sidebar-link">
+                                        <i className="mdi mdi-emoticon-cool">
+                                        </i><span className="hide-menu"> Font Awesome Icons </span>
+                                    </a></li>
                             </ul>
                         </li>
                     </ul>

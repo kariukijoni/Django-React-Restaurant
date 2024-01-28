@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
         return (
             <div className="page-wrapper">
                 <div className='row'>
-                    <div className='col-md-8'>
+                    <div className='col-md-9'>
                         <h2>All Orders</h2>
                         <table className="table table-bordered table-condensed">
                             <thead>
@@ -19,27 +19,31 @@ import { Link } from 'react-router-dom';
                                 <th scope="col">Quantity</th>
                                 <th scope="col">Sub total</th>
                                 <th scope="col">Status</th>
+                                <th>Action</th>
                                 </tr>
                             </thead>
+                            <tbody>
                             {orders.map(order => (
-                        <tbody key={order.id} >
-                            {/* <Link to={`/orders/${order.id}`}> */}
+                                <tr key={order.id}>
 
-                                <tr>
-                                {/* <th scope="row">1</th> */}
-                                <td>{ order.customer.first_name }</td>
-                                <td>{ order.menu_item.name }</td>
-                                <td>{ order.table_number.name}</td>
-                                <td>{ order.quantity }</td>
-                                <td>{order.sub_total}</td>
-                                <td>{ order.status }</td>
+                                    <td>{ order.customer.first_name }</td>
+                                    <td>{ order.menu_item.name }</td>
+                                    <td>{ order.table_number.name}</td>
+                                    <td>{ order.quantity }</td>
+                                    <td>{ order.sub_total }</td>
+                                    <td>{ order.status }</td>
+
+                                    <Link to={`/order/${order.id}`}>
+                                        <td><i className='fa fa-edit'>Post</i></td>
+                                    </Link>
                                 </tr>
-                        </tbody>
+                        
                         ))}
+                        </tbody>
                         </table>
                 </div>
 
-                <div className='col-md-3 offset-1'>
+                <div className='col-md-3'>
                         <div className='card'>
                             <div className='card-body'>
                                 <h3 className='card-title'>Open Deliveries</h3>
