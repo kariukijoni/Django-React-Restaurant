@@ -32,13 +32,13 @@ export default function NewOrder() {
         }).then(()=>{
             console.log('New order added!')
             setIsPending(false)
-            // Swal.fire({
-            //     position: "top-center",
-            //     icon: "success",
-            //     customer: "New Order Added Successfuly",
-            //     showConfirmButton: false,
-            //     timer: 3000
-            //   });
+            Swal.fire({
+                position: "top-center",
+                icon: "success",
+                title: "New Order Added Successfuly",
+                showConfirmButton: false,
+                timer: 3000
+              });
             navigate('/')
         })
     }
