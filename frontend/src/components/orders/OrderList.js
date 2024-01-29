@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
             <div className="page-wrapper">
                 <div className='row'>
                     <div className='col-md-9'>
-                        <h2>All Orders</h2>
+                        <h2>{title}</h2>
                         <table className="table table-bordered table-condensed">
                             <thead>
                                 <tr>

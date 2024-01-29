@@ -115,8 +115,8 @@ export default function NewOrder() {
                 <label>Quantity:</label>
                 <input type='text' className='form-control' value={quantity} onChange={(e)=>setQuantity(e.target.value)} required/>
                 
-                {/* <label>Sub Total:</label>
-                <input type='text' className='form-control' value={sub_total} onChange={(e)=>setSubTotal(e.target.value)} required/> */}
+                <label>Sub Total:</label>
+                <input type='text' className='form-control' value={sub_total} onChange={(e)=>setSubTotal(e.target.value)} required/>
 
 
                 { !isPending && <button className='btn btn-sm btn-info mt-2'>Add order</button> }

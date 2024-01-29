@@ -42,11 +42,6 @@ function Sidebar() {
                                         <span className="hide-menu"> Add Table </span>
                                     </Link>
                                 </li>
-                                <li className="sidebar-item">
-                                    <a href="icon-fontawesome.html" className="sidebar-link">
-                                        <i className="mdi mdi-emoticon-cool">
-                                        </i><span className="hide-menu"> Font Awesome Icons </span>
-                                    </a></li>
                             </ul>
                         </li>
                     </ul>
