@@ -42,6 +42,12 @@ function Sidebar() {
                                         <span className="hide-menu"> Add Table </span>
                                     </Link>
                                 </li>
+                                <li className="sidebar-item">
+                                    <Link to="/menu-item-list" className="sidebar-link">
+                                        <i className="mdi mdi-emoticon"></i>
+                                        <span className="hide-menu"> Menu Items </span>
+                                    </Link>
+                                </li>
                             </ul>
                         </li>
                     </ul>

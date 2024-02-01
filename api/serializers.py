@@ -9,11 +9,18 @@ class CustomerSerializer(serializers.ModelSerializer):
         depth=1
 
 
+class CategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Category
+        fields = '__all__'
+        depth=1
+
+
 class MenuItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = MenuItem
         fields = '__all__'
-        depth=1
+        # depth=1
 
 
 class OrderSerializer(serializers.ModelSerializer):
@@ -26,12 +33,6 @@ class OrderSerializer(serializers.ModelSerializer):
 class PaymentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Payment
-        fields = '__all__'
-        depth=1
-
-class CategorySerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Category
         fields = '__all__'
         depth=1
 
