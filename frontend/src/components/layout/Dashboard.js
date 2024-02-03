@@ -2,7 +2,7 @@ import React from 'react'
 
 function Dashboard() {
     return (
-        <div className="page-wrapper">
+        <div className="content-wrapper">
              <div className="page-breadcrumb">
                 <div className="row">
                     <div className="col-12 d-flex no-block align-items-center">
@@ -102,8 +102,14 @@ function Dashboard() {
                     </div>
                 </div>
             </div>
-            <footer className="footer text-center">
-                All Rights Reserved by Matrix-admin. Designed and Developed by <a href="https://wrappixel.com">WrapPixel</a>.
+
+            <footer className="main-footer">
+                <div className="float-right d-none d-sm-inline">
+                    Anything you want
+                </div>
+                <strong>
+                    Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.
+                </strong> All rights reserved.
             </footer>
         </div>
     )

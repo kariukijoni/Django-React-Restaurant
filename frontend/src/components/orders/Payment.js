@@ -17,7 +17,7 @@ const handleClick=()=>{
 }
 
 return (
-<div className='page-wrapper'>
+<div className='content-wrapper'>
     
     {isPending &&<i className="fa fa-spinner fa-spin"> </i>}
     {error && <div>{error}</div>}

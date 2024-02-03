@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 
     const OrderList = ({ orders,title }) => {
         return (
-            <div className="page-wrapper">
-                <div className='row'>
+            <div className="content-wrapper">
+                <div className='row ml-1'>
                     <div className='col-md-9'>
                         <h2>{title}</h2>
                         <table className="table table-bordered table-condensed">

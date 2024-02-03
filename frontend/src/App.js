@@ -14,15 +14,15 @@ import OrderDetails from './components/orders/OrderDetails';
 import Payment from './components/orders/Payment';
 
 // 
-import Tables from './components/settings/AddRestaurantTable';
 import AddRestaurantTable from './components/settings/AddRestaurantTable';
-import MenuItemList from './components/menu/MenuItemList';
-import AddMenuItem from './components/menu/AddMenuItem';
+import RestaurantTableList from './components/settings/RestaurantTableList';
+import MenuItemList from './components/settings/MenuItemList';
+import AddMenuItem from './components/settings/AddMenuItem';
 
 function App() {
   return (
     <Router>
-      <div id="main-wrapper" className="App">
+      <div className="App">
         <Header/>
         <Sidebar/>
           <Routes>
@@ -33,6 +33,7 @@ function App() {
             {/* <Route exact path='/orders/:id' element={<Payment/>}></Route> */}
             <Route exact path='/new-order' element={<NewOrder/>}></Route>
             <Route exact path='/add-restaurant-table' element={<AddRestaurantTable/>}></Route>
+            <Route exact path='restaurant-tables/' element={<RestaurantTableList/>}></Route>
             <Route exact path='/menu-item-list' element={<MenuItemList/>}></Route>
             <Route exact path='/add-menu-item-list' element={<AddMenuItem/>}></Route>
           </Routes>

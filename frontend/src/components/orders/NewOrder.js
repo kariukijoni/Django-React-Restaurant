@@ -67,61 +67,98 @@ export default function NewOrder() {
       }, []);
 
   return (
-    <div className='page-wrapper'>
-        <div className='row'>
-            <div className='col-md-5 m-2 card border-warning'>
+    <div className='content-wrapper'>
+        <div className='row ml-1'>
+            <div className='col-md-5 card border-warning'>
             <h3>
                 Add new Order
             </h3>
             <form onSubmit={handleSubmit}>
 
-                {/* Customer name */}
-                <label>Customer Name:</label>
-                    <select className='form-control'>
-                        {customer.map(customer => (
-                        <option key={customer.id} value={customer.id}>
-                            {customer.first_name}-{customer.last_name}
-                        </option>
-                        ))}
-                    </select>
+                {/* Customer name listing */}
+                <div className='row'>
+                    <div className='col-md-4'>
+                        <label>Customer Name:</label>
+                    </div>
+                    <div className='col-md-8'>
+                        <select className='form-control'>
+                            <option className='text-center'>---Select Customer---</option>
 
-                {/* Menu item */}
-                <label>Menu Item:</label>
-                    <select className='form-control'>
-                        {menu_item.map(menu => (
-                        <option key={menu.id} value={menu.id}>
-                            {menu.name}
-                        </option>
-                        ))}
-                    </select>
-                
-                {/* table number */}
-                <label>Table Number:</label>
-                    <select className='form-control'>
-                        {table_number.map(table => (
-                        <option key={table.id} value={table.id}>
-                            {table.name}
-                        </option>
-                        ))}
-                    </select>
-                
-                <label>Status:</label>
-                <select value={status} className='form-control' onChange={(e)=>setStatus(e.target.value)} required>
-                    <option value=''>--Please Select--</option>
-                    <option value='In-House'>In-House</option>
-                    <option value='Delivery'>Delivery</option>
-                </select>
+                            {customer.map(customer => (
+                            <option key={customer.id} value={customer.id}>
+                                {customer.first_name}-{customer.last_name}
+                            </option>
+                            ))}
+                        </select>
+                    </div>
+                </div>
+                {/* Menu item listing*/}
+                <div className='row'>
+                    <div className='col-md-4'>
+                        <label>Menu Item:</label>
+                    </div>
+                    <div className='col-md-8'>
+                        <select className='form-control'>
+                            <option className='text-center'>---Select Menu---</option>
 
-                <label>Quantity:</label>
-                <input type='text' className='form-control' value={quantity} onChange={(e)=>setQuantity(e.target.value)} required/>
-                
-                <label>Sub Total:</label>
-                <input type='text' className='form-control' value={sub_total} onChange={(e)=>setSubTotal(e.target.value)} required/>
+                            {menu_item.map(menu => (
+                            <option key={menu.id} value={menu.id}>
+                                {menu.name}
+                            </option>
+                            ))}
+                        </select>
+                    </div>
+                </div>
+                {/* table number listing*/}
+                <div className='row'>
+                    <div className='col-md-4'>
+                        <label>Table Number:</label>
+                    </div>
+                    <div className='col-md-8'>                    
+                        <select className='form-control'>
+                            <option className='text-center'>---Select Table---</option>
 
+                            {table_number.map(table => (
+                            <option key={table.id} value={table.id}>
+                                {table.name}
+                            </option>
+                            ))}
+                        </select>
+                    </div>
+                </div>
+                <div className='row'>
+                    <div className='col-md-4'>
+                        <label>Status:</label>
+                    </div>
+                    <div className='col-md-8'>
+                        <select value={status} className='form-control' onChange={(e)=>setStatus(e.target.value)} required>
+                            <option  className='text-center' value=''>---Please Select---</option>
+                            <option value='In-House'>In-House</option>
+                            <option value='Delivery'>Delivery</option>
+                        </select>
+                    </div>
+                </div>
+                <div className='row'>
+                    <div className='col-md-4'>
+                        <label>Quantity:</label>
+                    </div>
+                    <div className='col-md-8'>
+                        <input type='text' className='form-control' value={quantity} onChange={(e)=>setQuantity(e.target.value)} required/>
+                    </div>
+                </div>
+                <div className='row'>
+                    <div className='col-md-4'>
+                        <label>Sub Total:</label>
+                    </div>
+                    <div className='col-md-8'>
+                        <input type='text' className='form-control' value={sub_total} onChange={(e)=>setSubTotal(e.target.value)} required/>
+                    </div>
+                </div>
 
-                { !isPending && <button className='btn btn-sm btn-info mt-2'>Add order</button> }
-                { isPending && <button className='btn btn-sm btn-success mt-2' disabled>Adding order...</button> }
-                
+                <div className='mb-2'>
+                    { !isPending && <button className='btn btn-sm btn-info mt-2'>Add order</button> }
+                    { isPending && <button className='btn btn-sm btn-success mt-2' disabled>Adding order...</button> }
+                </div>
             </form>
             </div>
             <div className='col-md-6'>

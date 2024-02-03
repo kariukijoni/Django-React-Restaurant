@@ -41,8 +41,8 @@ export default function AddRestaurantTable() {
    
   return (
     <div className='page-wrapper'>
-        <div className='row'>
-            <div className='col-md-5 m-2 card border-warning'>
+        <div className='row ml-1'>
+            <div className='col-md-5 card border-warning'>
             <h3>
                 Add new Table
             </h3>
