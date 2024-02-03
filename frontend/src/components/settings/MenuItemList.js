@@ -17,7 +17,7 @@ function MenuItemList() {
             <div className='row ml-1'>
                 <div className='col-md-9'>
                     <h2>Menu Items
-                        <button className='btn btn-sm btn-outline-info ml-1'>
+                        <button className='btn btn-sm btn-outline-info'>
                             <Link to={'/add-menu-item-list'}>Add Menu</Link>
                         </button>
                     </h2>
@@ -36,13 +36,15 @@ function MenuItemList() {
                         {menu_items.map(menu => (
                             <tr key={menu.id}>
 
+                            {/* {console.log(menu)} */}
+
                                 <td>{ menu.name }</td>
                                 <td>{ menu.description }</td>
                                 <td>{ menu.price}</td>
                                 <td>{ menu.category.name }</td>
 
                                 {/* <Link to={`/menu/${menu.id}`}> */}
-                                    <td><i className='fa fa-edit'>Post</i></td>
+                                    <td><i className='fa fa-plus-circle bg-success'> Menu</i></td>
                                 {/* </Link> */}
                             </tr>
                     

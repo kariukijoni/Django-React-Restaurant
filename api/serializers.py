@@ -20,7 +20,7 @@ class MenuItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = MenuItem
         fields = '__all__'
-        # depth=1
+        depth=1
 
 
 class OrderSerializer(serializers.ModelSerializer):

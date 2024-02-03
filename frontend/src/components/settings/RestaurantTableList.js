@@ -36,7 +36,7 @@ function RestaurantTableList() {
                                 <td>{ rest_table.name }</td>
 
                                 {/* <Link to={`/menu/${menu.id}`}> */}
-                                    <td><i className='fa fa-edit'>Post</i></td>
+                                    <td><i className='fa fa-plus-circle bg-success'> Table</i></td>
                                 {/* </Link> */}
                             </tr>
                     

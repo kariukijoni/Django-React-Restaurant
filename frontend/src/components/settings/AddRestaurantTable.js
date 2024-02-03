@@ -48,13 +48,18 @@ export default function AddRestaurantTable() {
             </h3>
             <form onSubmit={handleSubmit}>
 
-                
-                <label>Name:</label>
-                <input type='text' className='form-control' value={name} onChange={(e)=>setName(e.target.value)} required/>
-                
-                { !isPending && <button className='btn btn-sm btn-info mt-2'>Add order</button> }
-                { isPending && <button className='btn btn-sm btn-success mt-2' disabled>Adding order...</button> }
-                
+                <div className='row'>
+                    <div className='col-md-4'>
+                        <label>Name:</label>
+                    </div>
+                    <div className='col-md-8'>
+                        <input type='text' className='form-control' value={name} onChange={(e)=>setName(e.target.value)} required/>
+                    </div>
+                </div>
+                <div className='mb-2'>
+                    { !isPending && <button className='btn btn-sm btn-info mt-2'>Add order</button> }
+                    { isPending && <button className='btn btn-sm btn-success mt-2' disabled>Adding order...</button> }
+                </div>
             </form>
             </div>
             <div className='col-md-6'>

@@ -33,9 +33,9 @@ import { Link } from 'react-router-dom';
                                     <td>{ order.sub_total }</td>
                                     <td>{ order.status }</td>
 
-                                    <Link to={`/order/${order.id}`}>
-                                        <td><i className='fa fa-edit'>Post</i></td>
-                                    </Link>
+                                    {/* <Link to={`/order/${order.id}`}> */}
+                                        <td><i className='fa fa-plus-circle bg-success'> Order</i></td>
+                                    {/* </Link> */}
                                 </tr>
                         
                         ))}
